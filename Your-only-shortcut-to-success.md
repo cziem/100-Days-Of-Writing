@@ -6,7 +6,7 @@ Well I may not have the answers you are looking for. But there is one sure truth
 
 > Shortcuts will cut you short!
 
-Yes, you heard me. Shortcuts will cut you short and bring you tears which you never really bargained for.
+Yes, you heard me. Shortcuts will cut you short and bring you tears which you did not bargain for.
 
 __The only shortcut to success is EDUCATION.__
 
