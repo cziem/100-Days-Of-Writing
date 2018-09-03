@@ -6,8 +6,8 @@
 
 ### Day0 September 3, Monday
 
-**Today's Work**:
+**Today's Work**: Working on `your only shortcut to success`
 
-**Thoughts**:
+**Thoughts**: If you really want to be fast, then get educated.
 
 **Link to work**:
