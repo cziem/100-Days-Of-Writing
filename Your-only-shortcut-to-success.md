@@ -31,3 +31,29 @@ Learning these control principles come from actual practice. You have to learn t
 People who are always looking for shortcuts ultimately become lazy. The reason is simple. Shortcuts take away the required process. Process takes time and demands patience.
 
 Thus if you are used to shortcuts, things that involve processes will bore you. And when you become bored you lose interest. That is how laziness comes.
+
+Shortcuts also make you unattentive to details and instruction. You become less patient listening to instruction, you become unconcerned with details. If you seek success truly, you will realise that details matter a great deal, to get the nitty-gritty involved in breaking through you have to pay keen attention to details.
+
+---
+
+## Reading Before Reaping
+
+You really don't need to go seminars and get formal courses to learn, although they are wonderful tools for education.
+
+Reading enlarges you capacity and increases your knowledge base. The difference most times between people is what one knows that the other does not know. Reading allows you to glean from other peoples experiences and tap into thier wealth of knowledge. Reading keeps you informed and articulate.
+
+You __Reap__ success when you have sown your time in reading and your resources in acquiring educating materials. Don't be too in a hurry that reading few pages of a book becomes an uphill task for you.
+
+## Building Interests
+
+You can become educated by building your interest in a topic or a business. Interest sparks curiosity, zeal and passion to learn.
+
+__Brain Sher__ author of `What rich people know & desperately want to keep secret` said: If you're observant, interested and committed to learning, any event, person, or situation is a potential teacher.
+
+You can become educated from any event, person or situation. All you need is interest and commitment.
+
+__Brain Sher__ also says:
+
+> Become rich in learning and in experiences and then all other riches will follow.
+
+Your only shortcut to success in anything is continuous learning of that which you pursue success at. Education is not an option it is a must have for success minded people. Don't let ignorance and satisfaction strip you of your dreams of achieving success.
