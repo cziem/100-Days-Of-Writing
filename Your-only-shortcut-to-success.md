@@ -70,5 +70,5 @@ Your question is __How?__
 - Surround yourself with friends who are success minded as yourself
 - Don't dwell on yesterday's victories.
 - Pay attention to your competitors.
-- Pay attention to your progress. See how you can keep track of your success here. [Tracking Success](https://www.linkedin.com/pulse/tracking-results-phavor-george)
+- Pay attention to your progress. See how you can keep track of your success here. [Tracking Success](https://www.linkedin.com/pulse/tracking-results-phavor-george) on linkedin or [here](https://medium.com/ignyte/tracking-result-ab94f73d49cc) on medium
 - Be accountable to someone or a group of people
