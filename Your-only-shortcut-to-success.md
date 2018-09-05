@@ -44,7 +44,7 @@ Reading enlarges you capacity and increases your knowledge base. The difference 
 
 You __Reap__ success when you have sown your time in reading and your resources in acquiring educating materials. Don't be too in a hurry that reading few pages of a book becomes an uphill task for you.
 
-## Building Interests
+## Building Interest
 
 You can become educated by building your interest in a topic or a business. Interest sparks curiosity, zeal and passion to learn.
 
@@ -57,3 +57,17 @@ __Brain Sher__ also says:
 > Become rich in learning and in experiences and then all other riches will follow.
 
 Your only shortcut to success in anything is continuous learning of that which you pursue success at. Education is not an option it is a must have for success minded people. Don't let ignorance and satisfaction strip you of your dreams of achieving success.
+
+## Appetite For Success
+
+You can maintain a steady hungry appetite for success, by increasing your pursuit for knowledge, applying it and experiencing the result.
+
+When satisfaction comes, relaxation stalls growth. A hungry will always eat, but when you are not hungry food makes less sense to you. Staying hungry is vital to keeping your drive towards success.
+
+Your question is __How?__
+
+- Have role models who are setting the pace.
+- Surround yourself with friends who are success minded as yourself
+- Don't dwell on yesterday's victories.
+- Pay attention to your competitors.
+- Pay attention to your progress. See how you can keep track of your success here. [Tracking Success](https://www.linkedin.com/pulse/tracking-results-phavor-george)
