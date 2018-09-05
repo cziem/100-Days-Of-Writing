@@ -71,3 +71,4 @@ Your question is __How?__
 - Don't dwell on yesterday's victories.
 - Pay attention to your competitors.
 - Pay attention to your progress. See how you can keep track of your success here. [Tracking Success](https://www.linkedin.com/pulse/tracking-results-phavor-george)
+- Be accountable to someone or a group of people
