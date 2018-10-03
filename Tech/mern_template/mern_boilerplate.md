@@ -22,3 +22,29 @@ $ mkdir mern_boilerplate && cd mern_boilerplate
 ```
 
 Next you create a couple directories.
+
+```
+$ mkdir client backend
+```
+
+From the root of your project run `npm init -y`. The `-y` flag will automatically answer yes to all the prompts.
+
+Good work
+
+---
+
+Now let's start pulling in our dependencies.
+
+### First is ESLINT
+
+You may choose to install this globally or locally.
+
+`npm i -g eslint` or `sudo npm i -g eslint`. To install locally, simply remove the `-g` flag.
+
+In your terminal run this
+
+```
+$ eslint --init
+```
+
+choose `recommended`
