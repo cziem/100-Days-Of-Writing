@@ -6,8 +6,14 @@ You would discover as you progress and gain mastery of the art and tech that the
 ## What you will learn
 
 In this post, am going to show you how to build a MERN (Mongodb, Express, React, Node) boilerplate from scratch. If you have ever used `express generator` or `create-react-app` you will relate better with this.
+
 I will be trying my best to show you how and what is happening behind the scene so you extend and do what ever you like after knowing the basis.
 
-## The Future...
+## The Future
 
-Prior to [create react app v2](http://create-react-app-link-here), there were some reasons developers `ejected` from the default CRA bootstrapping. I had mine as well, one of them being the inability to use [sass](https://sass-lang.com/)
+Prior to [create react app v2](https://github.com/facebook/create-react-app/releases), there were some reasons developers `ejected` from the default CRA bootstrapping. I had mine as well, one of them being the inability to use [sass](https://sass-lang.com/). This limitation drove me to find other ways of setting up CRA.
+
+Alright let's get to work 👍
+
+## What you need :floppy_disk:
+
