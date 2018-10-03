@@ -15,5 +15,10 @@ Prior to [create react app v2](https://github.com/facebook/create-react-app/rele
 
 Alright let's get to work 👍
 
-## What you need :floppy_disk:
+Open your terminal and run this command
 
+```sh
+$ mkdir mern_boilerplate && cd mern_boilerplate
+```
+
+Next you create a couple directories.
