@@ -48,3 +48,5 @@ $ eslint --init
 ```
 
 choose `recommended`
+
+Show pictures and continue project...
