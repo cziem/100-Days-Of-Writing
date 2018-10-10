@@ -77,6 +77,44 @@ while your `.eslintrc.json` should have the following
 }
 ```
 
+For the sake of this project we will update our `.eslintrc.json` file to have the code below.
+
+```json
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "react/jsx-filename-extension": 0,
+    "semi": "off",
+    "no-undef": "off",
+    "eol-last": "off",
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "comma-dangle": "off",
+    "no-console": "off"
+  },
+  "parser": "babel-eslint"
+}
+```
+
+The above rules will teach eslint to ignore some rules specified within the `rules` key.
+
 ### Babel & Webpack
 
 Now let's go ahead and install [babel](https://babeljs.io/) and [webpack](https://webpack.js.org/).
