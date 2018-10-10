@@ -194,4 +194,71 @@ $ npm i style-loader css-loader sass-loader
 $ npm i --save-dev html-webpack-plugin
 ```
 
-Great work 🙂.
+Great work 🙂. We are almost ready for the `client-side` but we to install `react` and it's peer dependencies
+
+```sh
+$ npm i react react-dom react-router-dom
+```
+
+Ready??? Let's go 👯
+
+## Client-Side
+
+Now you `cd` into the `client` directory.
+
+```sh
+$ mkdir public src
+```
+
+Navigate into the public directory and create an `index.html` file. Your new index.html file will contain basic boilerplate code and extra line `<div id="root"></div>` with the body tag.
+
+Next navigate into the `src` directory and create a file `index.js`. Your new index.js file would contain these lines of code:
+
+```jsx
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './components/App'
+
+const rootApp = document.getElementById('root')
+
+ReactDOM.render(<App />, rootApp)
+```
+
+Now let's create the `App` component. While inside the `src` directory, create a folder `mkdir components` and create a file `App.js` inside `components` folder.
+
+Add these lines inside the App component.
+
+```jsx
+import React from 'react'
+
+const App = () => (
+  <div>
+    <header>Custom Boilerplate</header>
+    <main>
+      <p>Now our frontEnd is working</p>
+    </main>
+  </div>
+)
+
+export default App
+```
+
+Just before we zoom off to the browser to see our new component rendered to the screen. Let's update our `package.json` file so we can run react from the terminal.
+
+There is a `script` key in the package.json file. Add these lines to it.
+
+```json
+"scripts": {
+  "start": "webpack-dev-server --open --watch --hot",
+  "lint": "eslint client/src",
+  "build": "webpack",
+}
+```
+
+Save your work and open the terminal. Now you can run your app with this:
+
+```sh
+$ npm start
+```
+
+Voila 🍾
