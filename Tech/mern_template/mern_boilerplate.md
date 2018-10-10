@@ -261,4 +261,146 @@ Save your work and open the terminal. Now you can run your app with this:
 $ npm start
 ```
 
-Voila 🍾
+Voila 🍾🍾🍾🍾🍾
+
+## Server-Side
+
+Now we hopefully have our frontEnd code up and running, let's now focus our attention to building out our server so we could build on that and make endpoints our clients can use.
+
+First, we need to add some dependencies, so let's visit the terminal and run:
+
+```sh
+$ npm i axios body-parser dotenv mongoose joi express
+```
+
+Next up, `cd` into the `backend` directory and run the following:
+
+```sh
+$ mkdir routes
+$ touch server.js
+```
+
+Open the `server.js` file and register the following lines of code
+
+```js
+const express = require('express')
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
+const cors = require('cors')
+require('dotenv').config()
+
+const app = express()
+const port = process.env.PORT || 5000
+
+// Connect to the database
+const options = { useNewUrlParser: true }
+mongoose.connect('mongodb://localhost:/mern_boilerplate', options)
+  .then(() => console.log('connected successfully'))
+  .catch(err => console.log('An error occurred', err))
+
+app.use(cors())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
+app.listen(port, () => console.log(`server is running on port ${port}))
+```
+
+Now let's create a route inside the `routes` directory. Create a file named `default.js` or anything you wish to name it.
+
+Then edit the file with the following lines of code:
+
+```js
+const express = require('express')
+const router = express.Router()
+
+// create a route for default endpoint
+router.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to the server-side'
+  })
+})
+
+router.post('/', (req, res) => {
+  res.json({
+    message: 'A POST request was made to the server'
+  })
+})
+
+module.exports = router
+```
+
+Now we update our `server.js` to use our newly created routes. So open the `server.js` file and update with these lines:
+
+```js
+const default = require('./routes/welcome')
+
+// catch endpoints here
+app.use('/', default)
+```
+
+So your entire `server.js` file at this point should look something like this
+
+```js
+const express = require('express')
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
+const cors = require('cors')
+require('dotenv').config()
+
+// import routes
+const default = require('./routes/welcome')
+
+const app = express()
+const port = process.env.PORT || 5000
+
+// Connect to the database
+const options = { useNewUrlParser: true }
+mongoose.connect('mongodb://localhost:/mern_boilerplate', options)
+  .then(() => console.log('connected successfully'))
+  .catch(err => console.log('An error occurred', err))
+
+app.use(cors())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
+// catch endpoints here
+app.use('/', default)
+
+app.listen(port, () => console.log(`server is running on port ${port}))
+```
+
+Finally we have to test our endpoints. For this we would use [postman](https://www.getpostman.com/apps). We also need to update our scripts in our `package.json` file.
+
+Update `package.json` with the following:
+
+```json
+"scripts": {
+  "start": "webpack-dev-server --open --watch --hot",
+  "lint": "eslint client/src",
+  "build": "webpack",
+  "serve": "nodemon backend/server.js",
+  "dbon": "mongod"
+}
+```
+
+Now you can go to your terminal and run 
+
+```sh
+$ npm run serve
+``` 
+
+Open another tab in your terminal with `ctrl + shft + T` and run the `mongod` service
+
+```sh
+$ npm run dbon
+```
+
+## Postman
+
+Head over to postman or you could use your browser. Enter this in the address bar:
+
+`http://localhost:3000/` and make sure to choose a GET or POST request from the postman tab.
+
+## Conclusion
+
+Hopefully you have your MERN app boilerplate up and running. If you run into any challange please reach out. Needless to say that this is not an exhaustive guide and may not be the best ways to get things working. But Hey, It was fun and hopefully you picked up an idea or two while working with this guide.
