@@ -181,3 +181,60 @@ Now we get to the hero section, you can use any image of your choice... here is 
 Our page should be looking like this with your own picture obviosly
 
 ![hero_section_preview](assets/hero_section_preview.png)
+
+Now we will style our navbar, so insert these code lines in your stylesheet
+
+```css
+nav {
+  display: flex;
+  background: #0e496b;
+  width: 100%;
+  position: relative;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 5vw;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+li:hover {
+  color: aliceblue;
+  background: #032d46;
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: #faf3f3;
+  transition: all 0.5s;
+  font-size: 1.3rem;
+  transition: all .3s ease-in-out;
+  transform: translateX(-150px); /* pushes the logo off the screen */
+}
+
+li.logo span {
+  font-weight: 600;
+  color: #02121b;
+  text-transform: capitalize;
+}
+
+li.logo:hover {
+  background: #032d46;
+}
+```
+
+When you preview your page, you should see a blue shaded navigation bar right below the hero section. The `logo` was sent off the screen with the css rule `transform: translateX(-150px);`
+
+![navbar_preview](assets/navbar_preview.png)
+
