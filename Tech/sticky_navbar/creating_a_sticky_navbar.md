@@ -391,4 +391,3 @@ Hit me up on social platforms
 * Linkedin - [phavor](https://www.linkedin.com/in/phavor-george-5b7ab0162/)
 * iGnyte - [igynte](https://medium.com/ignyte)
 * Hashnode - [synthesis](https://hashnode.com/@synthesis/)
-
