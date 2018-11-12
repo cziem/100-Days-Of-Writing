@@ -238,3 +238,157 @@ When you preview your page, you should see a blue shaded navigation bar right be
 
 ![navbar_preview](assets/navbar_preview.png)
 
+Next we take our attention to the text elements and give them some nice alignments. So insert the following code to your stylesheet
+
+```css
+section {
+  padding: .5rem 2rem;
+  margin: 1rem auto;
+  color: #272727;
+}
+
+section h3 {
+  padding: 2rem 0 0.5rem;
+}
+
+section p {
+  line-height: 1.8;
+  text-align: justify;
+}
+```
+
+Quickly setup the styles for the `footer` with the following code
+
+```css
+/* Styling the footer */
+footer {
+  background: #032d46;
+  color: #010b11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 8rem;
+  border-top: 2px solid #041a27;
+}
+
+.logo_footer {
+  padding-bottom: .5rem;
+}
+
+.logo_footer span {
+  color: #f3f3f3;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #cccecf;
+}
+```
+
+The full page should look pretty amazing right now.
+
+![Full page](assets/full_page.png)
+
+## The magic
+
+The principle of operation at work here is a combination of `javascript` and `css`. We will setup a style rule that would be added with from our `main.js` file when certain conditions are met.
+
+Therefore, we would create a class style rule in our stylesheet
+
+```css
+/* FIXED NAV */
+.fixed_nav li.logo {
+  max-width: 500px;
+  display: inline-flex;
+  transform: translateX(0)
+}
+
+body.fixed_nav nav {
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+  top: 0; /* Very important line */
+}
+```
+
+This `.fixed_nav` class will be added from our `javascript` code. Take note of the line `top: 0;` it's very important and I'll show you why in a bit.
+
+## Let's Scriptify our project
+
+Open the `main.js` file and get the `nav` element with the query method.
+
+```js
+const nav = document.querySelector('nav')
+```
+
+When you `console.log` the `nav` variable open your browser console and scroll to where there is `offsetTop` and check what value you have. Mine is 320.
+
+![Console.log(nav)](assets/console_offset.png)
+
+Now we are going to create a variable and assign the value of `offsetTop` to it, so we could identify when our `nav` element has reached the top of the browser, then control it's behaviour. 
+
+```js
+let navTop = nav.offsetTop;
+```
+
+Now we would write a simple function that would check for the position of the `nav` element...
+
+```js
+const stickyNav = () => {
+  if (window.scrollY >= navTop) {
+    document.body.classList.add('fixed_nav')
+  } else {
+    document.body.classList.remove('fixed_nav')
+  }
+}
+```
+
+`window.scrollY` holds the position of the browser's height while you are scrolling the page up or down. So we write a simple conditional check. When the value of our `window.scrollY` is greater or equal to the the value of the `navTop` the we want to add the `fixed_nav` class we created in our stylesheet. This class essentially fixes the `navbar` and sets it's `z-index` above every other element on the page.
+
+Finally we have to hook up the event listener and fire up our function.
+
+```js
+window.addEventListener('scroll', stickyNav)
+```
+
+Our window is listening for the `scroll` event, thus each time we scroll, the function will run. Now your full `main.js` file should look like this...
+
+```js
+const nav = document.querySelector('nav')
+let navTop = nav.offsetTop
+
+const stickyNav = () => {
+  if (window.scrollY >= navTop) {
+    document.body.classList.add('fixed_nav')
+  } else {
+    document.body.classList.remove('fixed_nav')
+  }
+}
+
+window.addEventListener('scroll', stickyNav)
+```
+
+Test this out in your browser and see how it works out. Hopefully, you have a working version of the sticky navbar project.
+
+## What Next
+
+Now that you have fixed the navbar, that's awesome, there's a lot more you could achieve within that function. You could do the following:
+
+* Change the navbar background color
+* Change the page's background color
+* Fix the `h3` elements below the navbar as they arrive just so their content could be read, and as the next `h3` approaches, the formal gives way.
+
+Go and have fun extending this little project. If you enjoyed this post and gained any knowledge from it, help spread the good news, like, share and send in your comments and thoughts. Your feedback is very valuable to me. Thanks.
+
+## Connectify
+
+Hit me up on social platforms
+
+* GitHub - [phavor](https://github.com/phavor)
+* Twitter - [@tz_fayvor](https://twitter.com/tz_fayvor)
+* Medium - [phavorsparks](https://medium.com/@phavorsparks)
+* Linkedin - [phavor](https://www.linkedin.com/in/phavor-george-5b7ab0162/)
+* iGnyte - [igynte](https://medium.com/ignyte)
+* Hashnode - [synthesis](https://hashnode.com/@synthesis/)
+
