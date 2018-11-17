@@ -5,3 +5,7 @@ Commiting to `100DaysOfCode` was a beautiful decision, though at the moment of m
 ## Commitment
 
 This is by far the most engrained virtue I picked up while doing the 100DaysOfCode. Committing to a cause...
+
+## Community
+
+The twitter community is great, more communities made the experience seamless, the likes of slack, gitter and github repo
