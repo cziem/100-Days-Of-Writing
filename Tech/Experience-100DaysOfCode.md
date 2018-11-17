@@ -9,3 +9,7 @@ This is by far the most engrained virtue I picked up while doing the 100DaysOfCo
 ## Community
 
 The twitter community is great, more communities made the experience seamless, the likes of slack, gitter and github repo
+
+## Challenging
+
+There rose challenges to debarre me from completing the challenge
